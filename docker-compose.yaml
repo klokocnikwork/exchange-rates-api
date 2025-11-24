@@ -1,0 +1,9 @@
+services:
+  db:
+    image: 'postgres:17.4'
+    container_name: db
+    ports:
+      - "8000:5432"
+    environment:
+      - POSTGRES_USER=testuser
+      - POSTGRES_PASSWORD=password
